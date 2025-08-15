@@ -13,6 +13,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class InputUtil {
+    private InputUtil(){
+
+    }
+
     public static int acceptMenuOption(Scanner scanner) {
         System.out.println("Press 1 to add new owner.");
         System.out.println("Press 2 to fetch owner details.");
