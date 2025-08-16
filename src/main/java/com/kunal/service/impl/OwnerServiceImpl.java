@@ -10,6 +10,10 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * @author Kunal Raj S
+ */
+
 @Service
 public class OwnerServiceImpl implements OwnerService {
 
