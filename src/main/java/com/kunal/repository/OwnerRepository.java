@@ -15,7 +15,7 @@ public interface OwnerRepository {
 
     void save(OwnerDTO ownerDTO);
 
-    Optional<OwnerDTO> findOById(int ownerId);
+    Optional<OwnerDTO> findById(int ownerId);
 
     void updatePetDetails(int ownerId, String petName);
 

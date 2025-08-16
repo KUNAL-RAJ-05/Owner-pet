@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.PropertySource;
 
 import java.util.List;
 import java.util.Scanner;
@@ -18,6 +19,7 @@ import java.util.Scanner;
  * @author Kunal Raj S
  */
 
+@PropertySource("classpath:messges.properties")
 @SpringBootApplication
 public class OwnerpetApplication implements CommandLineRunner {
 	private static final Logger LOGGER = LoggerFactory.getLogger(OwnerpetApplication.class);

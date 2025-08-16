@@ -1,9 +1,7 @@
 package com.kunal.dto;
 
 import com.kunal.enums.Gender;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 /**
  * @author Kunal Raj S
@@ -12,6 +10,8 @@ import lombok.ToString;
 @Setter
 @Getter
 @ToString
+@AllArgsConstructor()
+@NoArgsConstructor
 public class OwnerDTO {
     private int ownerId;
     private String firstName;
@@ -23,6 +23,4 @@ public class OwnerDTO {
     private String emailId;
     private PetDTO petDTO;
 
-    public void setPetDTO(PetDTO petDTO) {
-    }
 }

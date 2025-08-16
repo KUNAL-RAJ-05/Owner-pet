@@ -2,9 +2,7 @@ package com.kunal.dto;
 
 import com.kunal.enums.Gender;
 import com.kunal.enums.PetType;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 /**
  * @author Kunal Raj S
@@ -13,6 +11,8 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
+@AllArgsConstructor
+@NoArgsConstructor
 public class PetDTO {
     private int petId;
     private String name;
