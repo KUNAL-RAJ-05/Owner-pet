@@ -1,0 +1,78 @@
+2025-08-17T22:54:25.683+05:30  INFO 10260 --- [Ownerpet] [main] com.kunal.OwnerpetApplication            : Starting OwnerpetApplication using Java 21.0.8 with PID 10260 (D:\Learn\Owner&pet\target\classes started by Kunal Raj S in D:\Learn\Owner&pet)
+2025-08-17T22:54:25.686+05:30  INFO 10260 --- [Ownerpet] [main] com.kunal.OwnerpetApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T22:54:27.230+05:30  INFO 10260 --- [Ownerpet] [main] com.kunal.OwnerpetApplication            : Started OwnerpetApplication in 2.511 seconds (process running for 3.114)
+2025-08-17T22:54:53.710+05:30  INFO 13364 --- [Ownerpet] [main] com.kunal.OwnerpetApplication            : Starting OwnerpetApplication using Java 21.0.8 with PID 13364 (D:\Learn\Owner&pet\target\classes started by Kunal Raj S in D:\Learn\Owner&pet)
+2025-08-17T22:54:53.735+05:30  INFO 13364 --- [Ownerpet] [main] com.kunal.OwnerpetApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T22:54:55.062+05:30  INFO 13364 --- [Ownerpet] [main] com.kunal.OwnerpetApplication            : Started OwnerpetApplication in 2.26 seconds (process running for 2.959)
+2025-08-17T22:55:00.262+05:30  INFO 13364 --- [Ownerpet] [main] com.kunal.aspect.LogAspect               : Entered OwnerDTO com.kunal.service.impl.OwnerServiceImpl.findOwner(int) with arguments as [3]
+2025-08-17T22:55:00.267+05:30 ERROR 13364 --- [Ownerpet] [main] com.kunal.aspect.LogAspect               : Completed OwnerDTO com.kunal.service.impl.OwnerServiceImpl.findOwner(int) with exception as Can't find owner with OwnerId 3
+2025-08-17T22:55:00.267+05:30 ERROR 13364 --- [Ownerpet] [main] com.kunal.OwnerpetApplication            : Can't find owner with OwnerId 3
+
+com.kunal.exception.OwnerNotFoundException: Can't find owner with OwnerId 3
+	at com.kunal.service.impl.OwnerServiceImpl.lambda$findOwner$0(OwnerServiceImpl.java:43) ~[classes/:na]
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403) ~[na:na]
+	at com.kunal.service.impl.OwnerServiceImpl.findOwner(OwnerServiceImpl.java:43) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.aspectj.AspectJAfterThrowingAdvice.invoke(AspectJAfterThrowingAdvice.java:64) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.adapter.AfterReturningAdviceInterceptor.invoke(AfterReturningAdviceInterceptor.java:57) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.9.jar:6.2.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.9.jar:6.2.9]
+	at com.kunal.service.impl.OwnerServiceImpl$$SpringCGLIB$$0.findOwner(<generated>) ~[classes/:na]
+	at com.kunal.OwnerpetApplication.run(OwnerpetApplication.java:54) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86) ~[spring-core-6.2.9.jar:6.2.9]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772) ~[spring-boot-3.5.4.jar:3.5.4]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.4.jar:3.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.4.jar:3.5.4]
+	at com.kunal.OwnerpetApplication.main(OwnerpetApplication.java:36) ~[classes/:na]
+
+2025-08-17T22:59:26.357+05:30  INFO 3640 --- [Ownerpet] [main] c.k.Ownerpet.OwnerpetApplicationTests    : Starting OwnerpetApplicationTests using Java 21.0.8 with PID 3640 (started by Kunal Raj S in D:\Learn\Owner&pet)
+2025-08-17T22:59:26.358+05:30  INFO 3640 --- [Ownerpet] [main] c.k.Ownerpet.OwnerpetApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T22:59:27.533+05:30  INFO 3640 --- [Ownerpet] [main] c.k.Ownerpet.OwnerpetApplicationTests    : Started OwnerpetApplicationTests in 1.765 seconds (process running for 3.287)
+2025-08-17T23:25:11.593+05:30  INFO 4092 --- [Ownerpet] [main] c.k.O.service.test.PetServiceImplTest    : Starting PetServiceImplTest using Java 21.0.8 with PID 4092 (started by Kunal Raj S in D:\Learn\Owner&pet)
+2025-08-17T23:25:11.596+05:30  INFO 4092 --- [Ownerpet] [main] c.k.O.service.test.PetServiceImplTest    : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T23:25:13.067+05:30  INFO 4092 --- [Ownerpet] [main] c.k.O.service.test.PetServiceImplTest    : Started PetServiceImplTest in 2.039 seconds (process running for 3.772)
+2025-08-17T23:28:30.248+05:30  INFO 16312 --- [Ownerpet] [main] c.k.O.service.test.PetServiceImplTest    : Starting PetServiceImplTest using Java 21.0.8 with PID 16312 (started by Kunal Raj S in D:\Learn\Owner&pet)
+2025-08-17T23:28:30.253+05:30  INFO 16312 --- [Ownerpet] [main] c.k.O.service.test.PetServiceImplTest    : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T23:28:32.435+05:30  INFO 16312 --- [Ownerpet] [main] c.k.O.service.test.PetServiceImplTest    : Started PetServiceImplTest in 4.086 seconds (process running for 8.794)
+2025-08-17T23:32:36.395+05:30  INFO 2748 --- [Ownerpet] [main] c.k.O.service.test.PetServiceImplTest    : Starting PetServiceImplTest using Java 21.0.8 with PID 2748 (started by Kunal Raj S in D:\Learn\Owner&pet)
+2025-08-17T23:32:36.398+05:30  INFO 2748 --- [Ownerpet] [main] c.k.O.service.test.PetServiceImplTest    : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T23:32:37.567+05:30  INFO 2748 --- [Ownerpet] [main] c.k.O.service.test.PetServiceImplTest    : Started PetServiceImplTest in 1.788 seconds (process running for 3.398)
+2025-08-17T23:36:02.452+05:30  INFO 2960 --- [Ownerpet] [main] c.k.O.service.test.PetServiceImplTest    : Starting PetServiceImplTest using Java 21.0.8 with PID 2960 (started by Kunal Raj S in D:\Learn\Owner&pet)
+2025-08-17T23:36:02.455+05:30  INFO 2960 --- [Ownerpet] [main] c.k.O.service.test.PetServiceImplTest    : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T23:36:03.556+05:30  INFO 2960 --- [Ownerpet] [main] c.k.O.service.test.PetServiceImplTest    : Started PetServiceImplTest in 1.651 seconds (process running for 3.239)
+2025-08-17T23:40:42.842+05:30  INFO 6272 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : Starting OwnerServiceImplTest using Java 21.0.8 with PID 6272 (started by Kunal Raj S in D:\Learn\Owner&pet)
+2025-08-17T23:40:42.846+05:30  INFO 6272 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T23:40:44.177+05:30  INFO 6272 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : Started OwnerServiceImplTest in 1.931 seconds (process running for 3.145)
+2025-08-17T23:43:45.080+05:30  INFO 6932 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : Starting OwnerServiceImplTest using Java 21.0.8 with PID 6932 (started by Kunal Raj S in D:\Learn\Owner&pet)
+2025-08-17T23:43:45.082+05:30  INFO 6932 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T23:43:46.180+05:30  INFO 6932 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : Started OwnerServiceImplTest in 1.75 seconds (process running for 3.108)
+2025-08-17T23:46:12.864+05:30  INFO 3384 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : Starting OwnerServiceImplTest using Java 21.0.8 with PID 3384 (started by Kunal Raj S in D:\Learn\Owner&pet)
+2025-08-17T23:46:12.866+05:30  INFO 3384 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T23:46:13.881+05:30  INFO 3384 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : Started OwnerServiceImplTest in 1.603 seconds (process running for 2.841)
+2025-08-17T23:46:55.399+05:30  INFO 14752 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : Starting OwnerServiceImplTest using Java 21.0.8 with PID 14752 (started by Kunal Raj S in D:\Learn\Owner&pet)
+2025-08-17T23:46:55.402+05:30  INFO 14752 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : No active profile set, falling back to 1 default profile: "default"
+2025-08-17T23:46:56.619+05:30  INFO 14752 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : Started OwnerServiceImplTest in 1.738 seconds (process running for 2.877)
