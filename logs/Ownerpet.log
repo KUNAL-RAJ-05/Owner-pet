@@ -76,3 +76,6 @@ com.kunal.exception.OwnerNotFoundException: Can't find owner with OwnerId 3
 2025-08-17T23:46:55.399+05:30  INFO 14752 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : Starting OwnerServiceImplTest using Java 21.0.8 with PID 14752 (started by Kunal Raj S in D:\Learn\Owner&pet)
 2025-08-17T23:46:55.402+05:30  INFO 14752 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : No active profile set, falling back to 1 default profile: "default"
 2025-08-17T23:46:56.619+05:30  INFO 14752 --- [Ownerpet] [main] c.k.O.service.test.OwnerServiceImplTest  : Started OwnerServiceImplTest in 1.738 seconds (process running for 2.877)
+2025-08-18T00:20:17.653+05:30  INFO 15960 --- [Ownerpet] [main] com.kunal.OwnerpetApplication            : Starting OwnerpetApplication using Java 21.0.8 with PID 15960 (D:\Learn\Owner&pet\target\classes started by Kunal Raj S in D:\Learn\Owner&pet)
+2025-08-18T00:20:17.655+05:30  INFO 15960 --- [Ownerpet] [main] com.kunal.OwnerpetApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-08-18T00:20:18.453+05:30  INFO 15960 --- [Ownerpet] [main] com.kunal.OwnerpetApplication            : Started OwnerpetApplication in 1.256 seconds (process running for 1.555)

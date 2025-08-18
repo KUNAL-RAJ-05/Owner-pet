@@ -9,45 +9,26 @@ import java.util.Objects;
  * @author Kunal Raj S
  */
 
+@Builder
 @Setter
 @Getter
+@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @AllArgsConstructor()
 @NoArgsConstructor
+@ToString
 public class OwnerDTO {
+
+    @EqualsAndHashCode.Include
     private int ownerId;
     private String firstName;
     private String lastName;
     private Gender gender;
     private String city;
     private String state;
+    @EqualsAndHashCode.Include
     private String mobileNumber;
+    @EqualsAndHashCode.Include
     private String emailId;
     private PetDTO petDTO;
 
-    @Override
-    public String toString() {
-        if(Objects.isNull(petDTO)){
-            return "OwnerDTO{" +
-                    "ownerId=" + ownerId +
-                    ", firstName='" + firstName + '\'' +
-                    ", lastName='" + lastName + '\'' +
-                    ", gender=" + gender +
-                    ", city='" + city + '\'' +
-                    ", state='" + state + '\'' +
-                    ", mobileNumber='" + mobileNumber + '\'' +
-                    ", emailId='" + emailId + '\'' +
-                    '}';
-        }
-        return "OwnerDTO{" +
-                "ownerId=" + ownerId +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", gender=" + gender +
-                ", city='" + city + '\'' +
-                ", state='" + state + '\'' +
-                ", mobileNumber='" + mobileNumber + '\'' +
-                ", emailId='" + emailId + '\'' +
-                ", petDTO=" + petDTO +
-                '}';
-    }
 }

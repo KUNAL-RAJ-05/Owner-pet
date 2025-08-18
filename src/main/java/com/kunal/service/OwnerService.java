@@ -12,7 +12,7 @@ import java.util.List;
 
 public interface OwnerService {
 
-    void saveOwner(OwnerDTO ownerDTO) throws DuplicateOwnerIdException;
+    void saveOwner(OwnerDTO ownerDTO);
 
     OwnerDTO findOwner(int ownerId) throws OwnerNotFoundException;
 

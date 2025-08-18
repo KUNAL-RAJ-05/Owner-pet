@@ -5,6 +5,7 @@ import com.kunal.dto.PetDTO;
 import com.kunal.service.OwnerService;
 import com.kunal.service.PetService;
 import com.kunal.util.InputUtil;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
@@ -19,17 +20,13 @@ import java.util.Scanner;
  * @author Kunal Raj S
  */
 
+@RequiredArgsConstructor
 @PropertySource("classpath:messges.properties")
 @SpringBootApplication
 public class OwnerpetApplication implements CommandLineRunner {
 	private static final Logger LOGGER = LoggerFactory.getLogger(OwnerpetApplication.class);
 	private final OwnerService ownerService;
 	private final PetService petService;
-
-	public OwnerpetApplication(OwnerService ownerService, PetService petService) {
-		this.ownerService = ownerService;
-		this.petService = petService;
-	}
 
 	public static void main(String[] args) {
 

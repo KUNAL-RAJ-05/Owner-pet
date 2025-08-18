@@ -1,29 +1,26 @@
 package com.kunal.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
-import java.util.Objects;
+import com.kunal.enums.Gender;
+import com.kunal.enums.PetType;
+import lombok.*;
 
 
 /**
  * @author Kunal Raj S
  */
 
-@Getter
+@NoArgsConstructor
+@ToString(callSuper = true)
 @Setter
+@Getter
 public class WildPetDTO extends PetDTO{
     private String birthPlace;
 
-    @Override
-    public String toString() {
-        if (Objects.nonNull(getOwnerDTO())) {
-            return "WildPetDTO [id=" + getPetId() + ", name=" + getName() + ", gender=" + getGender() + ", type="
-                    + getPetType() + ", birthPlace=" + birthPlace + ", ownerDTO=" + getOwnerDTO() + "]";
-        } else {
-            return "WildPetDTO [id=" + getPetId() + ", name=" + getName() + ", gender=" + getGender() + ", type="
-                    + getPetType() + ", birthPlace=" + birthPlace + "]";
-        }
+    @Builder
+    public WildPetDTO(int id, String name, Gender gender, PetType type,OwnerDTO ownerDTO,String birthPlace)
+    {
+        super(id,name,gender,type,ownerDTO);
+        this.birthPlace=birthPlace;
     }
+
 }
